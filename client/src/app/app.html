@@ -1,0 +1,15 @@
+<div class="card bg-base-100 w-1/2 mx-auto p-10 mt-10 shadow-xl">
+  <h4 class="text-3xl text-red-500">{{ title() }}</h4>
+
+  <ul class="list">
+    @for (member of members(); track $index) {
+      <li class="list-row items-center">
+        <!-- {{ member.id }} - {{ member.displayName }} -->
+        <img src="/user.png" alt="user avatar" class="size-12 rounded-box" >
+        <div>{{member.displayName}}</div>
+    </li>
+    }
+  </ul>
+
+  <button class="btn btn-primary">Hey</button>
+</div>
